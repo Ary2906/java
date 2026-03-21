@@ -1,7 +1,6 @@
-package org.operators.internship;
+package org.internship.operators;
 
 
-import org.internship.operators.OperatorsDemo;
 import org.junit.jupiter.api.Test;
 
 
