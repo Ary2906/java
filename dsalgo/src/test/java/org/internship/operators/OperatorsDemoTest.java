@@ -1,10 +1,6 @@
 package org.internship.operators;
 
-
 import org.junit.jupiter.api.Test;
-
-
-
 
 class OperatorsDemoTest {
 
