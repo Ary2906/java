@@ -1,4 +1,4 @@
-package org.condionals.internship;
+package org.internship.condionals;
 
 
 import org.junit.jupiter.api.Test;
@@ -8,17 +8,12 @@ class SwitchDemoTest {
 
     @Test
     void testSwitchLogic() {
-        org.condionals.internship.SwitchDemo demo = new org.condionals.internship.SwitchDemo();
-
+        SwitchDemo demo = new SwitchDemo();
 
         assertEquals("Weekday", demo.getDayType(3));
 
-
         assertEquals("Weekend", demo.getDayType(6));
 
-
         assertEquals("Invalid Day", demo.getDayType(99));
-
-        System.out.println("Switch test passed!");
     }
 }

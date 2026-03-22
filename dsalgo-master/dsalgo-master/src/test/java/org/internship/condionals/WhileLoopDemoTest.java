@@ -1,4 +1,4 @@
-package org.condionals.internship;
+package org.internship.condionals;
 
 import org.internship.condionals.WhileLoopDemo;
 import org.junit.jupiter.api.Test;

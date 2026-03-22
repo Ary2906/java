@@ -1,4 +1,4 @@
-package org.condionals.internship;
+package org.internship.condionals;
 
 public class SwitchDemo {
 

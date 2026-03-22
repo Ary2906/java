@@ -1,7 +1,7 @@
 
 package org.internship.condionals;
 
-public class looping {
+public class LoopDemo {
 
     public String getRepeatMessage(int count) {
         String result = "";
