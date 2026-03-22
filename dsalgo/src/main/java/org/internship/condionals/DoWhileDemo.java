@@ -3,11 +3,13 @@ package org.internship.condionals;
 
 public class DoWhileDemo {
 
-    public void countAtLeastOnce(int number) {
+    public int loopCountInDoWhile(int number) {
         // Even if 'number' is already 0, this will print once!
+        int loopCount = 0;
         do {
-            System.out.println("Do-While count: " + number);
             number--;
+            loopCount++;
         } while (number > 0);
+        return loopCount;
     }
 }

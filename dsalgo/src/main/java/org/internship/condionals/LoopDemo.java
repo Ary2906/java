@@ -3,11 +3,11 @@ package org.internship.condionals;
 
 public class LoopDemo {
 
-    public String getRepeatMessage(int count) {
+    public String getRepeatMessage(String msg, int repeatation) {
         String result = "";
-        for (int i = 0; i < count; i++) {
-            result += "Java ";
+        for (int i = 0; i < repeatation; i++) {
+            result += msg;
         }
-        return result.trim();
+        return result;
     }
 }

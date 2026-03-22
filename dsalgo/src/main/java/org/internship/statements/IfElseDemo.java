@@ -17,10 +17,6 @@ public class IfElseDemo {
     }
 
     public boolean canVote(int age, boolean isCitizen) {
-        if (age >= 18 && isCitizen) {
-            return true;
-        } else {
-            return false;
-        }
+        return  age >= 18 && isCitizen;
     }
 }

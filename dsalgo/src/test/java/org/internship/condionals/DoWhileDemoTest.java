@@ -1,15 +1,31 @@
 package org.internship.condionals;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class DoWhileDemoTest {
 
     @Test
-    void testDoWhileExecution() {
-        DoWhileDemo demo = new DoWhileDemo();
-        System.out.println("--- Scenario 1: Number is 3 ---");
-        demo.countAtLeastOnce(3);
-        System.out.println("\n--- Scenario 2: Number is -5 (The 'At Least Once' proof) ---");
-        demo.countAtLeastOnce(-5);
+    void loopCountInDoWhileTest() {
+        DoWhileDemo doWhileDemo = new DoWhileDemo();
+        assertEquals(3, doWhileDemo.loopCountInDoWhile(3), "Loop count should be 3");
+    }
+
+    @Test
+    void loopCountInDoWhileTestWithOne() {
+        DoWhileDemo doWhileDemo = new DoWhileDemo();
+        assertEquals(1, doWhileDemo.loopCountInDoWhile(1), "Loop count should be 1");
+    }
+
+    @Test
+    void loopCountInDoWhileTestWithZero() {
+        DoWhileDemo doWhileDemo = new DoWhileDemo();
+        assertEquals(1, doWhileDemo.loopCountInDoWhile(0), "Loop count should be 1");
+    }
+
+    @Test
+    void loopCountInDoWhileTestWithNegative() {
+        DoWhileDemo doWhileDemo = new DoWhileDemo();
+        assertEquals(1, doWhileDemo.loopCountInDoWhile(-19), "Loop count should be 1");
     }
 }

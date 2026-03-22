@@ -7,10 +7,7 @@ class LoopDemoTest {
 
     @Test
     void testLoopLogic() {
-        LoopDemo obj = new LoopDemo();
-        // This replaces your "Main" execution
-        String result = obj.getRepeatMessage(3);
-        // This checks if the code actually works
-        assertEquals("Java Java Java", result);
+        LoopDemo loopDemo = new LoopDemo();
+        assertEquals("aaa", loopDemo.getRepeatMessage("a", 3), "a should be rpeated 3 times");
     }
 }

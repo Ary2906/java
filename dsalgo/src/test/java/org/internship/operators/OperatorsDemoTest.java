@@ -1,23 +1,48 @@
 package org.internship.operators;
 
 import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 
 class OperatorsDemoTest {
 
+    private final OperatorsDemo demo = new OperatorsDemo();
+
     @Test
-    void testAllOperators() {
-        OperatorsDemo demo = new OperatorsDemo();
+    void testPerformArithmetic() {
+        int result = demo.performArithmetic(10, 5);
+        // Calculation: (10+5)*10/5 % 2 = 150/5 % 2 = 30 % 2 = 0
+        assertEquals(0, result);
+    }
 
-        int mathResult = demo.performArithmetic(10, 5);
-        System.out.println("Arithmetic Output: " + mathResult);
+    @Test
+    void testCheckLogicValid() {
+        assertTrue(demo.checkLogic(20, true));
+    }
 
-        boolean logicResult = demo.checkLogic(20, true);
-        System.out.println("Logical (AND) Output: " + logicResult);
+    @Test
+    void testCheckLogicInvalidAge() {
+        assertFalse(demo.checkLogic(16, true));
+    }
 
-        int compoundResult = demo.useCompound(5);
-        System.out.println("Compound Assignment Output: " + compoundResult);
+    @Test
+    void testCheckLogicNoLicense() {
+        assertFalse(demo.checkLogic(25, false));
+    }
 
-        String ternaryResult = demo.checkTernary(45);
-        System.out.println("Ternary Output: " + ternaryResult);
+    @Test
+    void testUseCompound() {
+        int result = demo.useCompound(5);
+        // Calculation: (5+10)*2 = 30
+        assertEquals(30, result);
+    }
+
+    @Test
+    void testCheckTernaryPass() {
+        assertEquals("Pass", demo.checkTernary(55));
+    }
+
+    @Test
+    void testCheckTernaryFail() {
+        assertEquals("Fail", demo.checkTernary(40));
     }
 }
