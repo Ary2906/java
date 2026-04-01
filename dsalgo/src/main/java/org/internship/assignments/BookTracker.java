@@ -9,6 +9,8 @@ public class BookTracker {
         int minDistance = Integer.MAX_VALUE;
         int maxPageOfNearest = -1;
 
+        System.out.println("minDistance : "+minDistance);
+
         for (Map.Entry<String, Integer> entry : chapters.entrySet()) {
             String chapterName = entry.getKey();
             int chapterPage = entry.getValue();
@@ -26,6 +28,11 @@ public class BookTracker {
                 }
             }
         }
+
+//        chapters.entrySet().stream().forEach(stringIntegerEntry -> {
+//
+//        });
+
 
         return nearestChapter;
     }

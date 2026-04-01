@@ -13,10 +13,11 @@ class BookTrackerTest {
     void testBasicChapters() {
         Map<String, Integer> book = new LinkedHashMap<>();
         book.put("Chapter 1", 1);
-        book.put("Chapter 2", 15);
-        book.put("Chapter 3", 37);
+        book.put("Chapter 2", 10);
+        book.put("Chapter 3", 50);
+        book.put("Chapter 01", 5);
 
-        assertEquals("Chapter 2", tracker.nearestChapter(book, 10));
+        assertEquals("Chapter 2", tracker.nearestChapter(book, 45));
     }
 
     @Test
